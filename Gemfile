@@ -12,6 +12,7 @@ gem 'jbuilder',     '2.7.0'
 gem "actionview", ">= 5.1.6"
 gem 'sprockets', '~> 3.5', '>= 3.5.2'
 gem "autoprefixer-rails"
+gem 'bcrypt',         '3.1.12'
 
 
 group :development, :test do
