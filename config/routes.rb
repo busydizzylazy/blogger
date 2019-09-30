@@ -1,5 +1,5 @@
 Rails.application.routes.draw do
-
+  resources :users
   
   
   get 'users/new'
@@ -16,6 +16,9 @@ Rails.application.routes.draw do
   get  '/account', to: 'static_pages#account'
   
   get  '/signup',  to: 'users#new'
+  post '/signup',  to: 'users#create'
+  
+  
   
   root 'static_pages#home'
   
