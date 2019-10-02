@@ -62,12 +62,11 @@ Rails.application.configure do
   # config.active_job.queue_name_prefix = "blogger_#{Rails.env}"
   config.action_mailer.perform_caching = false
 
-  # for e.g.: RAILS_ROOT/config/environments/production.rb
-  config.action_mailer.delivery_method = :aws_sdk
 
-  config.x.mail_from = %(Sample <no-reply@guarded-springs-53759.herokuapp.com>)
+
 
   config.action_mailer.raise_delivery_errors = true
+  
   host = 'guarded-springs-53759.herokuapp.com'
   config.action_mailer.default_url_options = { host: host }
   config.action_mailer.smtp_settings = {
