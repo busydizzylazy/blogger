@@ -65,6 +65,25 @@ Rails.application.configure do
   # for e.g.: RAILS_ROOT/config/environments/production.rb
   config.action_mailer.delivery_method = :aws_sdk
 
+  config.x.mail_from = %(Sample <no-reply@guarded-springs-53759.herokuapp.com>)
+
+  config.action_mailer.raise_delivery_errors = true
+  host = 'guarded-springs-53759.herokuapp.com'
+  config.action_mailer.default_url_options = { host: host }
+  config.action_mailer.smtp_settings = {
+    :address        => 'email-smtp.us-east-1.amazonaws.com',
+    :port           => '587',
+    :authentication => :plain,
+    :user_name      => ENV['AKIAUWWA4NRBGQCAJA5S'],
+    :password       => ENV['BBa0xzwLrX0CmnnC9yHR9Mhs1zsDwbyRu0RxPl4kCEj1'],
+    :domain         => 'heroku.com',
+    :enable_starttls_auto => true
+  }
+
+
+
+
+
   # Ignore bad email addresses and do not raise email delivery errors.
   # Set this to true and configure the email server for immediate delivery to raise delivery errors.
   # config.action_mailer.raise_delivery_errors = false
