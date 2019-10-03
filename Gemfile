@@ -26,7 +26,7 @@ gem 'trix-rails', github: "kylefox/trix"
 gem 'acts-as-taggable-on', '~> 6.0'
 gem 'chosen-rails'
 gem 'actiontext', github:'kobaltz/actiontext',branch:'archive',require:'action_text'
-gem 'image_processing'
+
 
 gem 'jquery-ui-rails'
 gem 'simple_form'
