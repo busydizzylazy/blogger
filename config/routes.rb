@@ -3,6 +3,7 @@ Rails.application.routes.draw do
 
   resources :users
   resources :account_activations, only: [:edit]
+  resources :posts
   
   
   get 'users/new'
@@ -24,6 +25,11 @@ Rails.application.routes.draw do
   get    '/login',   to: 'sessions#new'
   post   '/login',   to: 'sessions#create'
   delete '/logout',  to: 'sessions#destroy'
+  
+  
+  get 'posts/new', to: 'posts#new', as: 'newpost'
+  get 'posts/new', to: 'posts#destroy', as: 'deletepost'
+  get 'posts/edit', to: 'posts#edit'
   
   root 'static_pages#home'
   

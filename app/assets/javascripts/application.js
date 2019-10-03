@@ -13,8 +13,18 @@
 
 
 
+//= require rails-ujs
 //= require jquery
 //= require bootstrap
 //= require rails-ujs
 //= require turbolinks
 //= require_tree .
+
+//= require quill.global
+//= require quill.submit
+
+
+
+//= require jquery-ui
+//= require jquery-ui/widgets/autocomplete
+

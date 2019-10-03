@@ -1,0 +1,55 @@
+
+<%= stylesheet_link_tag "posts", :media => "all" %>
+
+<% provide(:title, @post.title) %>
+
+
+<head>
+  <style>
+    
+	  h1 {   
+	    
+	    color: green;
+      font-size: 400%;
+      font-family: Lato, sans-serif;
+      font-weight: 600;
+	    
+	  }
+	  
+    p { 
+      
+      font-size: 120%;
+      font-family: Lato, sans-serif;
+      
+      
+    }
+    
+  </style>
+</head>
+
+<h1 >
+  
+  <%= @post.title %>
+</h1>
+
+<p>By <%= @post.user.name %> </p>
+
+<p><%= @post.content %> </p>
+
+
+
+</br>
+
+<% if logged_in? %>
+
+  <%= link_to 'Edit', edit_post_path(@post) %> |
+  <%= link_to 'Delete', @post, method: :delete, data: { confirm: 'Are you sure?' } %> |
+  <%= link_to 'Back', posts_path %>
+
+<% else %>
+
+
+  <%= link_to 'Back', posts_path %>
+
+<% end %>
+
