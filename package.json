@@ -1,0 +1,13 @@
+{
+  "name": "blogger",
+  "private": true,
+  "dependencies": {
+    "@rails/webpacker": "^4.0.7",
+    "actiontext": "https://github.com/kobaltz/actiontext",
+    "node": "^12.11.0",
+    "webpack": "^4.0.0"
+  },
+  "devDependencies": {
+    "webpack-dev-server": "^3.8.2"
+  }
+}
