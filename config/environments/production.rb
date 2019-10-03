@@ -47,6 +47,7 @@ Rails.application.configure do
   # Force all access to the app over SSL, use Strict-Transport-Security, and use secure cookies.
   config.force_ssl = true
   
+  #I tried to add it but it's already there
   config.active_storage.service = :amazon
 
   # Use the lowest log level to ensure availability of diagnostic information
