@@ -291,7 +291,7 @@ DEPENDENCIES
   acts-as-taggable-on (~> 6.0)
   autoprefixer-rails
   aws-sdk-rails (~> 2)
-  aws-sdk-s3 (~> 1)
+  aws-sdk-s3
   bcrypt (= 3.1.12)
   bootstrap-sass (= 3.3.7)
   bootstrap-will_paginate (= 1.0.0)
@@ -326,6 +326,9 @@ DEPENDENCIES
   web-console (= 3.5.1)
   webpacker (~> 4.0.7)
   will_paginate (= 3.1.6)
+
+RUBY VERSION
+   ruby 2.6.0p0
 
 BUNDLED WITH
    1.17.2
