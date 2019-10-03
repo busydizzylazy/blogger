@@ -3,6 +3,9 @@ amazon:
   access_key_id: AKIAI6TRDOWRJWGZAQJQ
   secret_access_key: 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
   region: ap-southeast-1
+  bucket: bloggertype
+
+  ##idk bucket?
 
   ##master key 471b34375f7f4af022170e940b62c297
   ##secret 8016b5af12f52dcaa2aa477b1b1356ad77e9223442d6e7fe50e506cd3af1eb94c2f091791717e9b7692512f5a2d70dbe84282c9fb0ec8dfbcaa7b0d419f24a0e
