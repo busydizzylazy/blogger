@@ -1,6 +1,6 @@
 class User < ApplicationRecord
 
-  
+  mount_uploader :picture, PictureUploader
   has_many :posts
     
   attr_accessor :remember_token, :activation_token

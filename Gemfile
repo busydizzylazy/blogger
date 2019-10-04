@@ -21,6 +21,9 @@ gem 'bootstrap-will_paginate', '1.0.0'
 gem 'aws-sdk-rails', '~> 2'
 gem 'aws-sdk-s3', '~> 1'
 
+gem 'carrierwave',             '1.2.2'
+gem 'mini_magick',             '4.9.5'
+
 gem 'webpacker', '~> 4.0.7'
 gem 'image_processing'
 gem 'shrine'
@@ -56,6 +59,7 @@ end
 
 group :production do
   gem 'pg', '0.20.0'
+  gem 'fog', '1.42'
 end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
