@@ -19,7 +19,7 @@ gem 'faker'
 gem 'will_paginate',           '3.1.6'
 gem 'bootstrap-will_paginate', '1.0.0'
 gem 'aws-sdk-rails', '~> 2'
-gem "aws-sdk-s3", require: false
+gem 'aws-sdk-s3', '~> 1'
 
 gem 'webpacker', '~> 4.0.7'
 gem 'image_processing'

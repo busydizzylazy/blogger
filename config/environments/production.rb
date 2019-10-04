@@ -69,6 +69,8 @@ Rails.application.configure do
 
 
   config.action_mailer.raise_delivery_errors = true
+  config.action_mailer.delivery_method = :aws_sdk
+  config.action_mailer.perform_deliveries = true
   
   host = 'guarded-springs-53759.herokuapp.com'
   config.action_mailer.default_url_options = { host: host }
@@ -76,8 +78,8 @@ Rails.application.configure do
     :address        => 'email-smtp.us-east-1.amazonaws.com',
     :port           => '587',
     :authentication => :plain,
-    :user_name      => ENV['AKIAUWWA4NRBGQCAJA5S'],
-    :password       => ENV['BBa0xzwLrX0CmnnC9yHR9Mhs1zsDwbyRu0RxPl4kCEj1'],
+    :user_name      => ENV['SES_USERNAME'],
+    :password       => ENV['SES_PASSWORD'],
     :domain         => 'heroku.com',
     :enable_starttls_auto => true
   }
