@@ -473,7 +473,7 @@ GEM
     websocket-driver (0.7.1)
       websocket-extensions (>= 0.1.0)
     websocket-extensions (0.1.4)
-    will_paginate (3.1.6)
+    will_paginate (3.1.8)
     xml-simple (1.1.5)
     xmlrpc (0.3.0)
 
@@ -489,7 +489,7 @@ DEPENDENCIES
   aws-sdk-s3 (~> 1)
   bcrypt (= 3.1.12)
   bootstrap-sass (= 3.3.7)
-  bootstrap-will_paginate (= 1.0.0)
+  bootstrap-will_paginate
   byebug (= 9.0.6)
   carrierwave (= 1.2.2)
   chosen-rails
@@ -523,7 +523,7 @@ DEPENDENCIES
   uglifier (= 3.2.0)
   web-console (= 3.5.1)
   webpacker (~> 4.0.7)
-  will_paginate (= 3.1.6)
+  will_paginate
 
 RUBY VERSION
    ruby 2.6.0p0

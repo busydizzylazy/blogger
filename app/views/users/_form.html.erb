@@ -12,6 +12,22 @@
 
   <%= f.label :password_confirmation %>
   <%= f.password_field :password_confirmation, class: 'form-control' %>
+  
+  <%= f.label :picture %>
+  <span class="picture">
+    <%= f.file_field :picture, accept: 'image/jpeg,image/gif,image/png' %>
+  </span>
+  
 
   <%= f.submit yield(:button_text), class: "btn btn-primary" %>
 <% end %>
+
+
+<script type="text/javascript">
+  $('#user_picture').bind('change', function() {
+    var size_in_megabytes = this.files[0].size/1024/1024;
+    if (size_in_megabytes > 10) {
+      alert('Maximum profile picture size is 10 MB. Please choose a smaller file.');
+    }
+  });
+</script>

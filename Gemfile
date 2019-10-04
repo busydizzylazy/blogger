@@ -16,8 +16,8 @@ gem 'sprockets', '~> 3.5', '>= 3.5.2'
 gem "autoprefixer-rails"
 gem 'bcrypt',         '3.1.12'
 gem 'faker'
-gem 'will_paginate',           '3.1.6'
-gem 'bootstrap-will_paginate', '1.0.0'
+gem 'will_paginate'
+gem 'bootstrap-will_paginate'
 gem 'aws-sdk-rails', '~> 2'
 gem 'aws-sdk-s3', '~> 1'
 

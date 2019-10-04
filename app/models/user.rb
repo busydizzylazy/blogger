@@ -2,6 +2,7 @@ class User < ApplicationRecord
 
   mount_uploader :picture, PictureUploader
   has_many :posts
+  validate  :picture_size
     
   attr_accessor :remember_token, :activation_token
   before_save   :downcase_email
@@ -90,5 +91,12 @@ class User < ApplicationRecord
       self.activation_token  = User.new_token
       self.activation_digest = User.digest(activation_token)
     end  
+    
+     # Validates the size of an uploaded picture.
+    def picture_size
+      if picture.size > 10.megabytes
+        errors.add(:picture, "should be less than 10MB")
+      end
+    end
     
 end
