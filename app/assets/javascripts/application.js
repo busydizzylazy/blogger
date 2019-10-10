@@ -21,8 +21,6 @@
 //= require_tree .
 
 //= require quill.global
-//= require quill.submit
-
 
 
 //= require jquery-ui
