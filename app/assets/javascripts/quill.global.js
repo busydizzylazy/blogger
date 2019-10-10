@@ -108,6 +108,8 @@
                     return create_quill_containers(index, object)
                 });
             }
+            
+            
         }
     };
 
