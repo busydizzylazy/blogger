@@ -14,9 +14,9 @@
  *= require_self
  *= require jquery-ui
  
- //= require codemirror
- //= require summernote
+ *= require codemirror
+ *= require summernote
  
- @import "summernote-bs4";
+ *= require "summernote-bs4";
  
  */
