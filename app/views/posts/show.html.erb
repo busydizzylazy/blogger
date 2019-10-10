@@ -42,7 +42,7 @@
 
 </br>
 
-<% if logged_in? && @post.user == @user || logged_in?  && current_user.admin?  %>
+<% if logged_in? && @post.user == current_user || logged_in?  && current_user.admin?  %>
 
   <%= link_to 'Edit', edit_post_path(@post) %> |
   <%= link_to 'Delete', @post, method: :delete, data: { confirm: 'Are you sure?' } %> |

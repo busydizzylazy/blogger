@@ -35,6 +35,8 @@ gem 'actiontext', github:'kobaltz/actiontext',branch:'archive',require:'action_t
 
 gem 'jquery-ui-rails'
 gem 'simple_form'
+gem 'pusher'
+gem 'figaro'
 
 
 group :development, :test do

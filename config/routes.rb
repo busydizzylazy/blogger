@@ -29,7 +29,8 @@ Rails.application.routes.draw do
   
   get 'posts/new', to: 'posts#new', as: 'newpost'
   get 'posts/new', to: 'posts#destroy', as: 'deletepost'
-  get 'posts/edit', to: 'posts#edit'
+
+  post '/comment',   to: 'comments#new'
   
   root 'static_pages#home'
   

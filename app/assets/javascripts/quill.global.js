@@ -31,7 +31,7 @@
 
     };
     
-          // Add fonts to whitelist
+    // Add fonts to whitelist
     var Font = Quill.import('formats/font');
     // We do not add Sans Serif since it is the default
     Font.whitelist = ['inconsolata', 'roboto', 'mirza', 'arial'];
@@ -132,4 +132,19 @@
             if (callNow) func.apply(context, args);
         };
     }
+    
+    
+        // Store accumulated changes
+    var change = new Delta();
+    quill.on('text-change', function(delta) {
+      change = change.compose(delta);
+    });
+        
+        // Check for unsaved data
+    window.onbeforeunload = function() {
+      if (change.length() > 0) {
+        return 'There are unsaved changes. Are you sure you want to leave?';
+      }
+    }
+    
 })(jQuery);
