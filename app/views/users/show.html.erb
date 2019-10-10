@@ -6,6 +6,10 @@
         <%= image_tag @user.picture.url if @user.picture? %>
         <%= @user.name %>
       </h1>
+      </br>
+      
+      <%= link_to "Write a post", newpost_path, class: "btn btn-lg btn-primary" %>
+      
     </section>
   </aside>
 </div>

@@ -8,46 +8,53 @@
   <thead>
     <tr>
       <th>Title</th>
-      <th>Content snippet</th>
-      <th colspan="5"></th>
+      <th>Author</th>
+      <th>Date Posted</th>
+      <th colspan="20"></th>
     </tr>
   </thead>
-
-  <% if logged_in? %>
-
-  <tbody>
-    <% @posts.each do |post| %>
-      <tr>
-        
-        <td><%= post.title %></td>
-        
-        
-        
-        <td><%= link_to 'Show', post %>  </td>
-        <td><%= link_to 'Edit', edit_post_path(post) %>  </td>
-        <td><%= link_to 'Delete', post, method: :delete, data: { confirm: 'Are you sure?' } %></td>
-      </tr>
-    <% end %>
-  </tbody>
-
-  <% else %>
   
-  <tbody>
-    <% @posts.each do |post| %>
-      <tr>
-        
-        <td><%= post.title %></td>
-        
- 
-        
-        <td><%= link_to 'Show', post %></td>
-      </tr>
-    <% end %>
-  </tbody>
+
+  <% if logged_in? && post.user == @user || logged_in?  && current_user.admin?  %>
   
+    <tbody>
+      <% @posts.each do |post| %>
+        <tr>
+          
+          <td><%= post.title %></td>
+          <td><%= post.user.name %></td>
+          <td><%= post.created_at.strftime("%B %d %Y") %></td>
+          
+   
+          
+          <td><%= link_to 'Show', post %> |</td>
+          <td><%= link_to 'Edit', edit_post_path(@post) %> | </td>
+          <td><%= link_to 'Delete', @post, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+          
+          
+        </tr>
+      <% end %>
+    </tbody>
   
-<% end %>
- 
+  else
+
+    
+    <tbody>
+      <% @posts.each do |post| %>
+        <tr>
+          
+          <td><%= post.title %></td>
+          <td><%= post.user.name %></td>
+          <td><%= post.created_at.strftime("%B %d %Y") %></td>
+          
+   
+          
+          <td><%= link_to 'Show', post %></td>
+        </tr>
+      <% end %>
+    </tbody>
+  
+  <% end %>
   
 </table>
 

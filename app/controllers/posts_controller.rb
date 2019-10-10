@@ -1,5 +1,9 @@
 class PostsController < ApplicationController
   before_action :set_post, only: [:show, :edit, :update, :destroy]
+  before_action :correct_user,   only: [:edit, :update,:destroy, :destroy]
+  before_action :admin_user,     only: [:edit, :update,:destroy, :destroy]
+
+
 
   # GET /posts
   # GET /posts.json

@@ -71,6 +71,20 @@ p {
   letter-spacing: -1px;
   padding-top: 9px;
   font-weight: bold;
+  
+  
+
+   
+  position: fixed;
+   
+  right: 0;
+   
+  left: 0;
+   
+  z-index: 999;
+ 
+
+  
   &:hover {
     color: white;
     text-decoration: none;
