@@ -22,6 +22,7 @@
 
 //= require quill.global
 
+//= require activestorage
 
 //= require jquery-ui
 //= require jquery-ui/widgets/autocomplete
