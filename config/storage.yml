@@ -2,7 +2,7 @@ amazon:
   service: S3
   access_key_id: ENV['S3_ACCESS_KEY']
   secret_access_key: ENV['S3_SECRET_ACCESS_KEY']
-  region: ap-southeast-1
+  region: ENV['S3_REGION']
   bucket: bloggertype
 
   ##idk bucket?
