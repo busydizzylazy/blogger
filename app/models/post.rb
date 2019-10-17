@@ -2,6 +2,8 @@ class Post < ApplicationRecord
   before_create :user
   belongs_to :user
   
+  acts_as_taggable_on :tags
+  
   has_rich_text :content
   
   default_scope -> { order(created_at: :desc) }

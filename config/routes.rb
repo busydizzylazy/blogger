@@ -4,6 +4,7 @@ Rails.application.routes.draw do
   resources :users
   resources :account_activations, only: [:edit]
   resources :posts
+  resources :tags, only: [:index, :show]
   
   
   get 'users/new'

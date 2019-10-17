@@ -38,7 +38,7 @@ gem 'simple_form'
 gem 'pusher'
 gem 'figaro'
 gem 'summernote-rails', '~> 0.8.12.0'
-
+gem 'acts-as-taggable-on', '~> 6.0'
 
 group :development, :test do
   gem 'sqlite3', '1.3.13'

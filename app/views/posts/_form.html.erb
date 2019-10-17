@@ -7,6 +7,11 @@
    
   <%= f.label :content %> 
   <%= f.text_area :content, 'data-provider': :summernote %>
+  
+  </br>
+  
+  <%= f.label :tags %>
+  <%= f.text_field :tag_list, value: f.object.tag_list.to_s %>
 
   <%= f.submit yield(:button_text), class: "btn btn-primary" %>
   
