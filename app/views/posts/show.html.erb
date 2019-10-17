@@ -7,15 +7,6 @@
 <head>
   <style>
     
-	  h1 {   
-	    
-	    color: green;
-      font-size: 400%;
-      font-family: Lato, sans-serif;
-      font-weight: 600;
-	    
-	  }
-	  
     p { 
       
       font-size: 120%;
@@ -36,9 +27,18 @@
 
 <p>Posted on <%= @post.created_at.strftime("%B %d %Y") %> at <%= @post.created_at.strftime("%l:%M%P") %></p>
 
-<p><%= @post.content %> </p>
+<%= @post.content %>
 
-<p><%= render @post.tags %></p>
+
+<p>
+  Tags: 
+  <% @post.tags.each do |item| %>
+    <%= render item %>
+  <% end %>
+
+</p>
+
+
 
 
 

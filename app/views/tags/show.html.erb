@@ -1,2 +1,4 @@
-<h1><%= @tag.name %></h1>
+<h1>Posts tagged with "<%= @tag.name %>"</h1>
 <div><%= render @posts %></div>
+
+<%= link_to 'Back', posts_path %>

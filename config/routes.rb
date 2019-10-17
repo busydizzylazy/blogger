@@ -4,7 +4,10 @@ Rails.application.routes.draw do
   resources :users
   resources :account_activations, only: [:edit]
   resources :posts
-  resources :tags, only: [:index, :show]
+  
+  resources :tags do
+    get :autocomplete_tag_name, :on => :collection
+  end
   
   
   get 'users/new'

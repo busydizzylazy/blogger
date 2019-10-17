@@ -28,7 +28,6 @@ gem 'webpacker', '~> 4.0.7'
 gem 'image_processing'
 gem 'shrine'
 gem 'trix-rails', github: "kylefox/trix"
-gem 'acts-as-taggable-on', '~> 6.0'
 gem 'chosen-rails'
 gem 'actiontext', github:'kobaltz/actiontext',branch:'archive',require:'action_text'
 
@@ -39,6 +38,8 @@ gem 'pusher'
 gem 'figaro'
 gem 'summernote-rails', '~> 0.8.12.0'
 gem 'acts-as-taggable-on', '~> 6.0'
+gem 'rails3-jquery-autocomplete'
+gem 'rails-assets-tether', '~> 1.1', '>= 1.1.1'
 
 group :development, :test do
   gem 'sqlite3', '1.3.13'
