@@ -4,9 +4,9 @@ class PictureUploader < CarrierWave::Uploader::Base
 
   storage :file
 
-  def default_url
-    ActionController::Base.helpers.asset_path("rails.png")
-  end
+  #def default_url
+    #ActionController::Base.helpers.asset_path("rails.png")
+  #end
 
 
   # Override the directory where uploaded files will be stored.
