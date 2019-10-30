@@ -1,6 +1,8 @@
 class Post < ApplicationRecord
   before_create :user
   belongs_to :user
+  acts_as_commontable
+  has_many :comments, as: :commentable
   
   
   acts_as_taggable_on :tags

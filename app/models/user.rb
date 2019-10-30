@@ -3,6 +3,7 @@ class User < ApplicationRecord
   mount_uploader :picture, PictureUploader
   has_many :posts
   validate  :picture_size
+  acts_as_commontator
     
   attr_accessor :remember_token, :activation_token
   before_save   :downcase_email

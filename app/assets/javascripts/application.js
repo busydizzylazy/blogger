@@ -34,6 +34,7 @@
 
 //= require summernote/summernote-bs4.min
 //= require summernote-init
+//= require jquery_ujs
 
 
 

@@ -39,9 +39,6 @@
 </p>
 
 
-
-
-
 </br>
 
 <% if logged_in? && @post.user == current_user || logged_in?  && current_user.admin?  %>
@@ -56,4 +53,6 @@
   <%= link_to 'Back', posts_path %>
 
 <% end %>
+
+<%= commontator_thread(@post) %>
 

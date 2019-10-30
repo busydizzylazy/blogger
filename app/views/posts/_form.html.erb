@@ -11,16 +11,9 @@
   </br>
   
   <%= f.label :tags %>
-  <%= f.autocomplete_field :tag_list, autocomplete_tag_name_tags_path, 
-                            :value => f.object.tag_list.to_s, 
-                            'data-delimiter' => ', 
-                            ', 'data-auto-focus' => true,
-                            :multiple => true %>
+  <%= f.autocomplete_field :tag_list, autocomplete_tag_name_tags_path, :"data-delimiter" => ', ' %> 
+
 
   <%= f.submit yield(:button_text), class: "btn btn-primary" %>
-  
-  </br>
-  
-  <%= link_to 'Posts', posts_path %>
   
 <% end %>

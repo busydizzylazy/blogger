@@ -1,5 +1,7 @@
 Rails.application.routes.draw do
   get 'sessions/new'
+  mount Commontator::Engine => '/commontator'
+
 
   resources :users
   resources :account_activations, only: [:edit]
@@ -7,6 +9,14 @@ Rails.application.routes.draw do
   
   resources :tags do
     get :autocomplete_tag_name, :on => :collection
+  end
+  
+  resources :posts do
+    resources :comments
+  end
+
+  resources :comments do
+    resources :comments
   end
   
   
