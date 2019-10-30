@@ -13,3 +13,7 @@ D, [2019-10-30T09:14:55.738864 #17051] DEBUG -- Pubnub::Telementry: Initialized 
 D, [2019-10-30T09:14:55.739201 #17051] DEBUG -- Pubnub::Client: Created new Pubnub::Client instance. Version: 4.0.27
 D, [2019-10-30T09:16:46.679827 #17215] DEBUG -- Pubnub::Telementry: Initialized Telemetry
 D, [2019-10-30T09:16:46.680203 #17215] DEBUG -- Pubnub::Client: Created new Pubnub::Client instance. Version: 4.0.27
+D, [2019-10-30T09:22:46.400472 #17509] DEBUG -- Pubnub::Telementry: Initialized Telemetry
+D, [2019-10-30T09:22:46.400829 #17509] DEBUG -- Pubnub::Client: Created new Pubnub::Client instance. Version: 4.0.27
+D, [2019-10-30T09:28:29.783013 #17859] DEBUG -- Pubnub::Telementry: Initialized Telemetry
+D, [2019-10-30T09:28:29.783449 #17859] DEBUG -- Pubnub::Client: Created new Pubnub::Client instance. Version: 4.0.27
