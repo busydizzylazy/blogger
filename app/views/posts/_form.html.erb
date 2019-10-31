@@ -8,7 +8,7 @@
   <%= f.text_field :title, class: 'form-control' %>
    
   <%= f.label :content %> 
-  <%= f.text_area :content, 'data-provider': :summernote %>
+  <%= f.text_field :content, type: 'text', class: 'quill_container' %>
   
   </br>
   
@@ -19,6 +19,44 @@
   <%= f.submit yield(:button_text), class: "btn btn-primary" %>
   
 <% end %>
+
+
+<script>
+  var quill = new Quill('#editor', {
+    theme: 'snow'
+  });
+  
+  var delta = quill.getContents();
+  
+  form.onsubmit = function() {
+    var postContentInput = document.querySelector('#post-content');
+    postContentInput.value = quill.root.innerHTML;
+  };
+  
+  // Add fonts to whitelist
+  var Font = Quill.import('formats/font');
+  // We do not add Sans Serif since it is the default
+  Font.whitelist = ['inconsolata', 'roboto', 'mirza', 'arial'];
+  Quill.register(Font, true);
+
+
+          
+  .ql-snow .ql-picker.ql-size .ql-picker-item[data-value="14px"]::before {
+      content: 'Normal';
+      font-size: 14px !important;
+  }
+  
+  .ql-snow .ql-picker.ql-size .ql-picker-item[data-value="16px"]::before {
+      content: 'Large';
+      font-size: 16px !important;
+  }
+  
+  .ql-snow .ql-picker.ql-size .ql-picker-item[data-value="18px"]::before {
+      content: 'Huge';
+      font-size: 18px !important;
+  }
+  
+</script>
 
 
 
