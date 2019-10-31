@@ -43,6 +43,8 @@ gem 'rails-assets-tether', '~> 1.1', '>= 1.1.1'
 gem 'commontator'
 gem 'pubnub', '~> 4.0.21'
 
+gem 'quilljs-rails'
+
 
 gem 'sassc-rails'
 

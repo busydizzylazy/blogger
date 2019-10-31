@@ -7,6 +7,15 @@ $ ->
   # to set summernote object
   # You should change '#post_content' to your textarea input id
   summer_note = $('#content')
+  
+  $ ->
+      ready = ->
+          $('[data-provider="summernote"]').each ->
+            $(this).summernote
+              height: 450,
+              minHeight: 450,
+              maxHeight: 450,
+              focus: true  
 
   # to call summernote editor
   summer_note.summernote
@@ -24,3 +33,7 @@ $ ->
     # alert $('#post_content').code()
     summer_note.val summer_note.code()
     true
+    
+  $(document).ready(ready)
+  $(document).on('page:load', ready)
+  
