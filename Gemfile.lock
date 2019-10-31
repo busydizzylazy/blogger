@@ -61,6 +61,7 @@ GEM
       tzinfo (~> 1.1)
     acts-as-taggable-on (6.0.0)
       activerecord (~> 5.0)
+    acts_as_votable (0.12.1)
     addressable (2.7.0)
       public_suffix (>= 2.0.2, < 5.0)
     ansi (1.5.0)
@@ -558,6 +559,7 @@ DEPENDENCIES
   actiontext!
   actionview (>= 5.1.6)
   acts-as-taggable-on (~> 6.0)
+  acts_as_votable
   autoprefixer-rails
   aws-sdk-rails (~> 2)
   aws-sdk-s3 (~> 1)

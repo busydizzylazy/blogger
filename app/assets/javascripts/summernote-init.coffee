@@ -4,3 +4,4 @@ $(document).on 'turbolinks:load', ->
       height: 450,
       minHeight: 450,
       maxHeight: 450
+  
