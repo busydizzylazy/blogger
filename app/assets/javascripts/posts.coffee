@@ -12,7 +12,8 @@ $ ->
   summer_note.summernote
     # to set options
     minHeight:450,
-    maxHeight:450
+    maxHeight:450,
+    focus: true  
 
 
   # to set code for summernote

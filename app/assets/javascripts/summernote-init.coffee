@@ -3,5 +3,6 @@ $(document).on 'turbolinks:load', ->
     $(this).summernote
       height: 450,
       minHeight: 450,
-      maxHeight: 450
+      maxHeight: 450,
+      focus: true  
   
