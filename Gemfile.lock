@@ -568,7 +568,7 @@ DEPENDENCIES
   bootstrap-sass (= 3.3.7)
   bootstrap-will_paginate
   byebug (= 9.0.6)
-  carrierwave (= 1.2.2)
+  carrierwave
   chosen-rails
   coffee-rails (= 4.2.2)
   commontator

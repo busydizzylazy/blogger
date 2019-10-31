@@ -21,7 +21,7 @@ gem 'bootstrap-will_paginate'
 gem 'aws-sdk-rails', '~> 2'
 gem 'aws-sdk-s3', '~> 1'
 
-gem 'carrierwave',             '1.2.2'
+gem 'carrierwave'
 gem 'mini_magick',             '4.9.5'
 
 gem 'webpacker', '~> 4.0.7'
