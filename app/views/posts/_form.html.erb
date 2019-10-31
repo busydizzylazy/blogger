@@ -8,7 +8,7 @@
   <%= f.text_field :title, class: 'form-control' %>
    
   <%= f.label :content %> 
-  <%= f.text_area :content, 'data-provider': :summernote %>
+  <%= f.text_field :content, type: 'text', class: 'quill_container' %>
   
   </br>
   
@@ -22,9 +22,4 @@
 
 
 
-<script>
-    $(document).ready(function() {
-        $('#summernote').summernote();
-    });
-    
-</script>
+

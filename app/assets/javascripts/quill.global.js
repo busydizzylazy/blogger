@@ -38,12 +38,18 @@
     Quill.register(Font, true);
 
 
+
+
     window.Quilljs = {
+        
+
+        
         //This method loads the default values from the global object
         setDefaults: function(new_defaults) {
             defaults = $.extend(defaults, new_defaults);
             this.addQuillContainer(defaults)
         },
+        
         //This method loads if no global object is defined
         loadDefaults: function () {
             this.addQuillContainer(defaults)
