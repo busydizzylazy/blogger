@@ -28,11 +28,6 @@ $ ->
   # to set code for summernote
   summer_note.code summer_note.val()
 
-  # to get code for summernote
-  summer_note.closest('form').submit ->
-    # alert $('#post_content').code()
-    summer_note.val summer_note.code()
-    true
     
   $(document).ready(ready)
   $(document).on('page:load', ready)

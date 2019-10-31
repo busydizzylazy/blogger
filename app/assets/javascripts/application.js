@@ -37,9 +37,5 @@
 //= require jquery_ujs
 
 
-$('[data-provider="summernote"]').each(function(){
-  $(this).summernote({ });
-})
-
 
 
