@@ -2,7 +2,11 @@ class PictureUploader < CarrierWave::Uploader::Base
   include CarrierWave::MiniMagick
   process resize_to_fill: [100, 100, Gravity = 'Center']
 
-  storage :file
+  if Rails.env.production?
+    storage :fog
+  else
+    storage :file
+  end
 
   #def default_url
     #ActionController::Base.helpers.asset_path("rails.png")
