@@ -4,6 +4,7 @@ class User < ApplicationRecord
   has_many :posts
   validate  :picture_size
   acts_as_commontator
+  
     
   attr_accessor :remember_token, :activation_token
   before_save   :downcase_email
@@ -58,11 +59,11 @@ class User < ApplicationRecord
   end
   
     # Returns true if the given token matches the digest.
-  def authenticated?(attribute, token)
-    digest = send("#{attribute}_digest")
-    return false if digest.nil?
-    BCrypt::Password.new(digest).is_password?(token)
-  end
+  #def authenticated?(attribute, token)
+    #digest = send("#{attribute}_digest")
+    #return false if digest.nil?
+    #BCrypt::Password.new(digest).is_password?(token)
+  #end
   
   # Forgets a user.
   def forget
