@@ -32,7 +32,7 @@
 //= require jquery-ui/widgets/autocomplete
 
 
-//= require summernote/summernote-bs4.min
+//= require summernote-bs4.min
 //= require summernote-init
 //= require jquery_ujs
 
