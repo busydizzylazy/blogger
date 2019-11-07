@@ -30,7 +30,10 @@ Rails.application.configure do
   config.action_mailer.delivery_method = :aws_sdk
   config.action_mailer.perform_deliveries = true
   
-  config.action_mailer.default_url_options = { :host => "guarded-springs-53759.herokuapp.com" }
+  
+  host = 'guarded-springs-53759.herokuapp.com'
+  config.action_mailer.default_url_options = { host: host }
+ 
   config.action_mailer.smtp_settings = {
     :address        => 'email-smtp.us-east-1.amazonaws.com',
     :port           => '587',
@@ -40,6 +43,7 @@ Rails.application.configure do
     :domain         => 'heroku.com',
     :enable_starttls_auto => true
   }
+
 
 
   

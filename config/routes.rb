@@ -46,6 +46,8 @@ Rails.application.routes.draw do
 
   post '/comment',   to: 'comments#new'
   
+  post '/send_email', to: 'welcome#send_email', as: 'send_email'
+  
   root 'static_pages#home'
   
 end
