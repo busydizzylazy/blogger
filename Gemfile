@@ -50,7 +50,7 @@ gem 'sassc-rails'
 
 gem 'acts_as_votable'
 
-gem 'fog-aws'
+
 
 
 group :development, :test do
@@ -75,7 +75,7 @@ end
 
 group :production do
   gem 'pg', '0.20.0'
-  gem 'fog'
+  gem 'fog', require: 'fog/aws'
   
 end
 
