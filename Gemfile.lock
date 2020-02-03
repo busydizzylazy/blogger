@@ -574,7 +574,7 @@ DEPENDENCIES
   commontator
   faker
   figaro
-  fog (= 1.42)
+  fog
   fog-aws
   guard (= 2.13.0)
   guard-minitest (= 2.4.4)

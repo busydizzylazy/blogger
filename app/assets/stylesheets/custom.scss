@@ -46,7 +46,7 @@ h1 {
 }
 
 h2 {
-  font-size: 1.2em;
+  font-size: 1.5em;
   letter-spacing: -1px;
   margin-bottom: 30px;
   text-align: center;
@@ -66,14 +66,12 @@ p {
   float: left;
   margin-right: 10px;
   font-size: 1.7em;
-  color: white;
+  color: #CCE3F4;
   text-transform: uppercase;
   letter-spacing: -1px;
   padding-top: 9px;
   font-weight: bold;
   
-  
-
    
   position: fixed;
    
@@ -86,7 +84,8 @@ p {
 
   
   &:hover {
-    color: white;
+    color: #CCE3F4;
+    
     text-decoration: none;
   }
 }
@@ -116,6 +115,9 @@ footer {
     }
   }
 }
+
+
+
 
 /* miscellaneous */
 
@@ -217,3 +219,24 @@ input {
     border-bottom: 1px solid $gray-lighter;
   }
 }
+
+
+/* table  */
+
+th {
+  text-align: center;
+  padding: 15px;
+}
+
+#minitext{
+  font-size: 20px;
+  margin-bottom: 15px;
+  
+}
+
+.post_title{
+  font-family: "Arial Black";
+  color: red;
+}
+
+

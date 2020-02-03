@@ -52,6 +52,7 @@ gem 'acts_as_votable'
 
 gem 'fog-aws'
 
+
 group :development, :test do
   gem 'sqlite3', '1.3.13'
   gem 'byebug',  '9.0.6', platform: :mri
@@ -74,7 +75,8 @@ end
 
 group :production do
   gem 'pg', '0.20.0'
-  gem 'fog', '1.42'
+  gem 'fog'
+  
 end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem

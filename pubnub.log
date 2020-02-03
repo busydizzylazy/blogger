@@ -53,3 +53,19 @@ D, [2019-11-06T05:24:43.240391 #4359] DEBUG -- Pubnub::Telementry: Initialized T
 D, [2019-11-06T05:24:43.241353 #4359] DEBUG -- Pubnub::Client: Created new Pubnub::Client instance. Version: 4.0.27
 D, [2019-11-07T01:40:55.328401 #4100] DEBUG -- Pubnub::Telementry: Initialized Telemetry
 D, [2019-11-07T01:40:55.329415 #4100] DEBUG -- Pubnub::Client: Created new Pubnub::Client instance. Version: 4.0.27
+D, [2019-11-08T01:39:53.697052 #4379] DEBUG -- Pubnub::Telementry: Initialized Telemetry
+D, [2019-11-08T01:39:53.698432 #4379] DEBUG -- Pubnub::Client: Created new Pubnub::Client instance. Version: 4.0.27
+D, [2019-11-11T02:11:01.391746 #4411] DEBUG -- Pubnub::Telementry: Initialized Telemetry
+D, [2019-11-11T02:11:01.392810 #4411] DEBUG -- Pubnub::Client: Created new Pubnub::Client instance. Version: 4.0.27
+D, [2019-12-26T01:46:20.999922 #4100] DEBUG -- Pubnub::Telementry: Initialized Telemetry
+D, [2019-12-26T01:46:21.001305 #4100] DEBUG -- Pubnub::Client: Created new Pubnub::Client instance. Version: 4.0.27
+D, [2020-01-06T05:15:40.207324 #3736] DEBUG -- Pubnub::Telementry: Initialized Telemetry
+D, [2020-01-06T05:15:40.208360 #3736] DEBUG -- Pubnub::Client: Created new Pubnub::Client instance. Version: 4.0.27
+D, [2020-01-06T07:09:56.742766 #7585] DEBUG -- Pubnub::Telementry: Initialized Telemetry
+D, [2020-01-06T07:09:56.745431 #7585] DEBUG -- Pubnub::Client: Created new Pubnub::Client instance. Version: 4.0.27
+D, [2020-02-03T07:44:39.322952 #3789] DEBUG -- Pubnub::Telementry: Initialized Telemetry
+D, [2020-02-03T07:44:39.323992 #3789] DEBUG -- Pubnub::Client: Created new Pubnub::Client instance. Version: 4.0.27
+D, [2020-02-03T07:55:43.318521 #4235] DEBUG -- Pubnub::Telementry: Initialized Telemetry
+D, [2020-02-03T07:55:43.320669 #4235] DEBUG -- Pubnub::Client: Created new Pubnub::Client instance. Version: 4.0.27
+D, [2020-02-03T08:55:46.970892 #7342] DEBUG -- Pubnub::Telementry: Initialized Telemetry
+D, [2020-02-03T08:55:46.974306 #7342] DEBUG -- Pubnub::Client: Created new Pubnub::Client instance. Version: 4.0.27
