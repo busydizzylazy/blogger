@@ -2,9 +2,9 @@ if Rails.env.production?
   CarrierWave.configure do |config|
     
         ## something
-    config.fog_directory     =  ENV['S3_BUCKET']
+    config.fog_directory =  ENV['S3_BUCKET']
     config.fog_provider = 'fog/aws'
-    config.storage = :fog
+   
     config.fog_use_ssl_for_aws = true
     config.fog_public     = true
     
@@ -18,6 +18,7 @@ if Rails.env.production?
       :region                => 'ap-southeast-1'   
     }
     
+    config.storage = :fog
 
     
   end
