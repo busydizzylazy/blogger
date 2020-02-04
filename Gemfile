@@ -39,7 +39,7 @@ gem 'figaro'
 gem 'summernote-rails', '~> 0.8.12.0'
 gem 'acts-as-taggable-on', '~> 6.0'
 gem 'rails3-jquery-autocomplete'
-gem 'rails-assets-tether', '~> 1.1', '>= 1.1.1'
+#$gem 'rails-assets-tether', '~> 1.1', '>= 1.1.1'
 gem 'commontator'
 gem 'pubnub', '~> 4.0.21'
 
@@ -50,7 +50,11 @@ gem 'sassc-rails'
 
 gem 'acts_as_votable'
 
-
+source 'https://rails-assets.org' do
+  gem 'rails-assets-tether', '>= 1.3.3' 
+  # add the line below
+  gem 'rails-assets-chosen'
+end
 
 
 group :development, :test do
